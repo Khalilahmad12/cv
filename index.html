@@ -1,17 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    img{
-      width: 300px;
-      height: 300px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <img src="hero-section.png" alt="my image" >
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">MyPortfolio</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div>
+        <p class="intro">Hello, I am</p>
+        <h1>Your Name</h1>
+        <p class="subtitle">A simple website starter with clean folder structure.</p>
+        <a class="btn" href="#projects">View Projects</a>
+      </div>
+      <img src="assets/images/hero-section.png" alt="Hero section" />
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>
+        This template gives you a basic website layout separated into HTML, CSS, JavaScript,
+        and assets folders so you can scale the project easily.
+      </p>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>Describe your first project here.</p>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>Describe your second project here.</p>
+        </article>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>Describe your third project here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="form-message" class="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Your Name</div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
