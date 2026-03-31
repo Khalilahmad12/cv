@@ -3,15 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>My Portfolio</title>
   <style>
-    img{
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      background: #f4f4f4;
+    }
+
+    img {
       width: 300px;
       height: 300px;
     }
+
+    .pdf-container {
+      width: 100%;
+      height: 600px; /* adjust height as needed */
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    a.download-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: linear-gradient(to right, #8b5cf6, #3b82f6);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+
+    a.download-btn:hover {
+      transform: scale(1.05);
+    }
+
   </style>
 </head>
 <body>
-    <img src="ayesha.jfif" alt="my image" >
+
+
+  <!-- Image -->
+  <img src="ayesha.jfif" alt="My Image">
+
+  <!-- PDF embedded -->
+  <iframe class="pdf-container" src="ayeshaCv.pdf"></iframe>
+
+  <!-- Download link -->
+  <p>
+    <a href="ayeshaCv.pdf" download class="download-btn">Download My CV</a>
+  </p>
+
 </body>
 </html>
